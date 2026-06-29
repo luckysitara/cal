@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Solaris Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo-link">
+        <img src="logo.jpg" alt="Solaris Logo" class="nav-logo-img">
+        <span class="nav-logo-text">SOLARIS</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Content Container -->
+  <main class="legal-page">
+    <div class="legal-header">
+      <h1 class="legal-title">Privacy Policy</h1>
+      <p class="legal-meta">Last Updated: June 29, 2026</p>
+    </div>
+
+    <div class="legal-content">
+      <p>
+        Solaris ("we", "our", or "us") provides a local-first utility mobile application designed to calculate cryptocurrency exchange rates, track token balances, and monitor watched public wallet addresses on the Solana blockchain. We are committed to protecting your privacy.
+      </p>
+
+      <h2>1. Information We Do Not Collect</h2>
+      <p>
+        Solaris is built on a <strong>local-first architecture</strong>. This means:
+      </p>
+      <ul>
+        <li>We do not collect, transmit, upload, or store any of your personal data, wallet addresses, account balances, or private keys to our own servers.</li>
+        <li>We do not track your location, device identifier, or usage behavior.</li>
+        <li>We do not use any third-party analytics or tracker SDKs inside our application.</li>
+      </ul>
+
+      <h2>2. On-Device Storage</h2>
+      <p>
+        Any configuration you create within the app is stored <strong>locally</strong> on your device's persistent storage (using standard Android AsyncStorage mechanisms). This includes:
+      </p>
+      <ul>
+        <li>A list of public wallet addresses you have authorized via the Mobile Wallet Adapter (MWA) protocol.</li>
+        <li>Your watched wallet addresses (watch-only public keys).</li>
+        <li>Your manual portfolio simulation balances.</li>
+        <li>Your selected active token and active fiat currency settings.</li>
+      </ul>
+      <p>
+        You can delete this data at any time by clearing the application storage, uninstalling the app, or disconnecting wallets within the holdings tab.
+      </p>
+
+      <h2>3. Third-Party Web3 Service Queries</h2>
+      <p>
+        To display real-time valuation and balances, the application makes direct HTTP requests from your device to public Web3 interfaces:
+      </p>
+      <ul>
+        <li><strong>Solana RPC Nodes:</strong> The app queries a Solana RPC endpoint (defaulting to the official Solana Mainnet Beta node `api.mainnet-beta.solana.com` or your custom configured RPC node) to fetch lamport and token account balances.</li>
+        <li><strong>Jupiter API:</strong> The app queries the Jupiter Price API (`api.jup.ag`) to pull active token prices and verified token lists.</li>
+        <li><strong>ExchangeRate API:</strong> The app queries `open.er-api.com` to retrieve standard USD-to-fiat conversion rates.</li>
+      </ul>
+      <p>
+        These third-party services may receive standard network metadata (such as your IP address) necessary to resolve the query. We do not control, and are not responsible for, the privacy practices of these third-party endpoints.
+      </p>
+
+      <h2>4. Security</h2>
+      <p>
+        Because we do not collect or transmit your information, the security of your data depends on securing your physical device. We recommend using device locks, biometric authentication, and maintaining security updates on your Android OS.
+      </p>
+
+      <h2>5. Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last Updated" date.
+      </p>
+
+      <h2>6. Contact Us</h2>
+      <p>
+        If you have any questions or feedback about this Privacy Policy, you can contact us through our official project repository.
+      </p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="footer-brand-title">Solaris Converter</span>
+        <p class="footer-copyright">&copy; 2026 Solaris Utility. All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <a href="terms.html">Terms of Use</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
