@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1E1E2F"/>
+      <stop offset="100%" stop-color="#0F0F14"/>
+    </radialGradient>
+    
+    <!-- Neon Sun / Star Gradient -->
+    <linearGradient id="solarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9C07"/>
+      <stop offset="50%" stop-color="#FF5A1F"/>
+      <stop offset="100%" stop-color="#8A2BE2"/>
+    </linearGradient>
+
+    <!-- Metallic Circular Border Gradient -->
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#bgGrad)" stroke="#2F3336" stroke-width="1.5"/>
+
+  <!-- Outer Glowing Metallic Border Ring -->
+  <circle cx="50" cy="50" r="41" fill="none" stroke="url(#metalGrad)" stroke-width="2.5" opacity="0.95"/>
+  <circle cx="50" cy="50" r="41" fill="none" stroke="#FF9C07" stroke-width="1" opacity="0.3"/>
+
+  <!-- Futuristic Solar Star Center -->
+  <g transform="translate(50,50)">
+    <!-- 8 Main Spikes of the Solar Compass/Star -->
+    <path d="M0,-8 L5,-35 L0,-38 L-5,-35 Z" fill="url(#solarGrad)"/>
+    <path d="M8,0 L35,5 L38,0 L35,-5 Z" fill="url(#solarGrad)"/>
+    <path d="M0,8 L5,35 L0,38 L-5,35 Z" fill="url(#solarGrad)"/>
+    <path d="-8,0 L-35,5 L-38,0 L-35,-5 Z" fill="url(#solarGrad)"/>
+
+    <!-- Diagonal Spikes (NE, SE, SW, NW) -->
+    <g transform="rotate(45)">
+      <path d="M0,-6 L4,-28 L0,-30 L-4,-28 Z" fill="url(#solarGrad)" opacity="0.9"/>
+    </g>
+    <g transform="rotate(135)">
+      <path d="M0,-6 L4,-28 L0,-30 L-4,-28 Z" fill="url(#solarGrad)" opacity="0.9"/>
+    </g>
+    <g transform="rotate(225)">
+      <path d="M0,-6 L4,-28 L0,-30 L-4,-28 Z" fill="url(#solarGrad)" opacity="0.9"/>
+    </g>
+    <g transform="rotate(315)">
+      <path d="M0,-6 L4,-28 L0,-30 L-4,-28 Z" fill="url(#solarGrad)" opacity="0.9"/>
+    </g>
+
+    <!-- Inner Core Solar Orbit Rings -->
+    <circle cx="0" cy="0" r="14" fill="none" stroke="#000000" stroke-width="3"/>
+    <circle cx="0" cy="0" r="14" fill="none" stroke="url(#solarGrad)" stroke-width="2"/>
+    <circle cx="0" cy="0" r="7" fill="url(#solarGrad)"/>
+    
+    <!-- Central Solar Pupil Dot -->
+    <circle cx="0" cy="0" r="3" fill="#FFFFFF" opacity="0.9"/>
+  </g>
+</svg>
